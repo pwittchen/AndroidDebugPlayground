@@ -57,7 +57,7 @@ You can filter these logs with `⟳` sign.
 
 ##build.gradle file
 
-Please, take a look at `build.gradle` file. Sometimes it may happen that project won't be built correctly. In such case, remove the following lines:
+Please, take a look at [build.gradle](https://github.com/pwittchen/AndroidDebugPlayground/blob/master/app/build.gradle) file. Sometimes it may happen that project won't be built correctly. In such case, remove the following lines:
 
 ```
 apply plugin: 'loglifecycle'
