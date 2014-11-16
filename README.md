@@ -24,7 +24,7 @@ produces the following logs:
 
 #loglifecycle
 
-Annotation Activity with `@LogLifecycle` annotation as follows:
+Following `@LogLifecycle` annotation:
 
 ```java
 @LogLifeCycle
