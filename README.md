@@ -28,7 +28,7 @@ Annotation Activity with `@LogLifecycle` annotation as follows:
 
 ```java
 @LogLifeCycle
-public class MainActivity {
+public class MainActivity extends ActionBarActivity {
     //...
 }
 ```
