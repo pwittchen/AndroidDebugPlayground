@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android'
+apply plugin: 'loglifecycle'
+apply plugin: 'hugo' // in documentation is: 'com.jakewharton.hugo:hugo-plugin:1.1.0', but 'hugo' works
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.14.2'
+        classpath 'com.github.stephanenicolas.loglifecycle:loglifecycle-plugin:1.0.3'
+        classpath 'com.jakewharton.hugo:hugo-plugin:1.1.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+
+    defaultConfig {
+        applicationId "pwittchen.com.androiddebugplayground"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.0'
+}
