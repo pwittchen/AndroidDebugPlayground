@@ -64,7 +64,7 @@ apply plugin: 'loglifecycle'
 apply plugin: 'hugo'
 ```
 
-After that, build project, so it can download dependencies and plugins. When build is complete, add lines mentioned above, and build project again.
+After that, build project, so it can download dependencies and plugins. When build is complete, add back lines mentioned above, and build project again.
 
 ##References
 - hugo: https://github.com/JakeWharton/hugo
